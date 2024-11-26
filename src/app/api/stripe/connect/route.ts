@@ -9,7 +9,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET!, {
   apiVersion: "2024-10-28.acacia",
 });
 
-export async function GET() {
+export default async function GET() {
   try {
     const user = await currentUser();
     if (!user) {
