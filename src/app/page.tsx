@@ -1,3 +1,4 @@
+import IframeChat from "@/components/iframe/iframeChat";
 import NavBar from "@/components/navbar";
 import { Button, buttonVariants } from "@/components/ui/button";
 import {
@@ -64,7 +65,9 @@ export default async function Home() {
           ))}
         </div>
       </section>
+      <IframeChat />
     </main>
+
   );
 }
 
